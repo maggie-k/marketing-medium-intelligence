@@ -2,7 +2,7 @@
 An in-depth analysis of how variations in sales are influenced by the choice of marketing medium and its associated costs.
 
 # Objective:
-1. Answer the question, 'Is billboard marketing still an effective marketing tool in today's digital world? 
+1. To explore the question, 'Is billboard marketing still an effective marketing tool in today's digital world? 
   -Using real data, examine how and whether marketing costs impacted the sales generated. 
   -Assess the predictability of billboards, tv, google ads, social media, influencer marketing and affiliate marketing to drive sales.
 2. Determine which marketing channels fuels the highest revenue by measuring:
