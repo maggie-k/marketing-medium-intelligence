@@ -1,0 +1,12 @@
+MarketingNarrative = 
+VAR ChannelName = SELECTEDVALUE(adv_data[marketing_channel])
+VAR Corr = [Correlation]  -- your dynamic Correlation measure
+VAR RSquare = [R_Squared]  -- your R-Squared measure
+RETURN 
+"Channel: " & ChannelName & 
+" | Correlation: " & FORMAT(Corr, "0.00") & 
+" | R²: " & FORMAT(RSquare, "0.00") & 
+IF(Corr > 0.5, " → Strong Positive Impact", 
+   IF(Corr > 0.2, " → Moderate Impact", 
+   IF(Corr > 0, " → Weak Impact", 
+   " → No Impact or Negative")))

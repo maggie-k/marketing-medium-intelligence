@@ -1,0 +1,17 @@
+ChannelNarrative = 
+VAR Channel = SELECTEDVALUE(adv_data[marketing_channel])
+VAR Corr = [Correlation]  -- Replace with your actual correlation measure
+VAR R2 = [R_Squared]      -- Replace with your actual R² measure
+VAR Interpretation = 
+    SWITCH(
+        TRUE(),
+        Corr >= 0.75, "a strong impact",
+        Corr >= 0.5, "a moderately strong impact",
+        Corr >= 0.3, "a weak to moderate impact",
+        Corr > 0, "a weak impact",
+        "no or negative impact"
+    )
+RETURN
+Channel & " shows " & Interpretation & " on sales, with a corr of " &
+FORMAT(Corr, "0.00") & " and an R² of " & FORMAT(R2, "0.00") &
+" - meaning " & FORMAT(R2 * 100, "0") & "% of sales variation is explained by its spend."

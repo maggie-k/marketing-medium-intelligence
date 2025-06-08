@@ -1,0 +1,20 @@
+Correlation = 
+VAR MeanX = AVERAGEX(ALLSELECTED(adv_data), adv_data[marketing_costs])
+VAR MeanY = AVERAGEX(ALLSELECTED(adv_data), adv_data[product_sales])
+VAR Num = 
+    SUMX(
+        ALLSELECTED(adv_data),
+        (adv_data[marketing_costs] - MeanX) * (adv_data[product_sales] - MeanY)
+    )
+VAR DenX = 
+    SQRT(SUMX(
+        ALLSELECTED(adv_data),
+        POWER(adv_data[marketing_costs] - MeanX, 2)
+    ))
+VAR DenY = 
+    SQRT(SUMX(
+        ALLSELECTED(adv_data),
+        POWER(adv_data[product_sales] - MeanY, 2)
+    ))
+RETURN
+    DIVIDE(Num, DenX * DenY)

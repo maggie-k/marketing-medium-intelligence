@@ -1,0 +1,4 @@
+R_Squared = 
+VAR Corr = [Correlation]
+RETURN 
+    Corr * Corr
