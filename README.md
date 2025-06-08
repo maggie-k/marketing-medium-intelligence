@@ -28,4 +28,5 @@ Affiliate marketing had the strongest explanatory power with a correlation of 0.
 
 # Screenshot
 ![dashboard_overview](https://github.com/user-attachments/assets/df1f8ca2-3be0-49f5-bbf6-199c32ea2ab1)
-![billboard_marketing_analysis](https://github.com/user-attachments/assets/ec79ffd0-5f4e-4d0a-a225-80485a039b38)
+![billboard_marketing_analysis](https://github.com/user-attachments/assets/8c489daf-0af0-4394-b53b-b064ede895eb)
+
