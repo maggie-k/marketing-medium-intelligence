@@ -1,4 +1,4 @@
-# marketing-medium-intelligence
+# marketing channel ROI analysis
 An in-depth analysis of how variations in sales are influenced by the choice of marketing medium and its associated costs.
 
 # Objective:
